@@ -1,0 +1,86 @@
+.glint-meta-field{
+    margin-bottom: 10px;
+}
+
+.glint-meta-field.one-col{
+    clear: both;
+}
+
+.glint-meta-field.half-col{
+    width: 48%;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.glint-meta-field.half-col.last{
+    clear: both;
+}
+
+.glint-meta-field select{
+    width: 100%;
+}
+
+.glint-repeater-left{
+    width: 38%;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.glint-repeater-right{
+    width: 60%;
+    display: inline-block;
+}
+
+.glint-repeater-right .remove-slide.button{
+    float: right;
+    border-width: 0;
+    background: transparent;
+}
+
+button.upload-image.button{
+    margin-bottom: 20px;
+}
+
+/* Autocomplete styling */
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 10000;
+}
+
+.ui-autocomplete li {
+    padding: 8px 12px;
+    cursor: pointer;
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+
+.ui-autocomplete li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Repeater styling */
+.glint-repeater-item {
+    background: #f9f9f9;
+    padding: 15px 25px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.glint-repeater-item h4 {
+    margin-top: 0;
+}
+
+.remove-slide {
+    margin-top: 10px;
+}
+
+/* Image preview */
+.image-preview {
+    margin: 10px 0;
+}
