@@ -81,6 +81,10 @@
     position: relative;
 }
 
+.swiper.image_text-slider .swiper-slide{
+    width: auto;
+}
+
 .swiper.image_text-slider.bottom_transparent .slide-content{
     position: absolute;
     width: 100%;
