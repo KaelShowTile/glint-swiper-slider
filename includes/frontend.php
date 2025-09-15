@@ -70,7 +70,11 @@ function glint_swiper_shortcode_handler($atts) {
                     $stars = str_repeat('<span class="star">★</span>', (int)$review['rating']);
 
                     $output .= '<div class="swiper-slide">';
-                    $output .= $review_image_url ? '<img src="' . esc_url($review_image_url) . '" alt="' . esc_attr($slide['content']) . '">' : '';
+                    if($review['content']){
+                        $output .= $review_image_url ? '<img src="' . esc_url($review_image_url) . '" alt="' . esc_attr($review['content']) . '">' : '';
+                    }else{
+                        $output .= $review_image_url ? '<img src="' . esc_url($review_image_url) . '">' : '';
+                    }                   
                     $output .= '<div class="slide-content">';
                     $output .= '<div class="review-meta">';
                     $output .= $review['reviewer'] ? '<span class="reviewer">' . esc_html($review['reviewer']) . '</span>' : '';
