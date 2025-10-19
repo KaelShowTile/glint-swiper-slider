@@ -186,9 +186,16 @@ function glint_swiper_shortcode_handler($atts) {
                         $output .= '<span class="product-discount-rate">-' . round( (1-($sale_price/$regular_price)), 2)*100 . '%</span>';
                     }
 
+                    //for cht only
                     $sticker_url = get_field('product_icon_image', $product_id);
+
                     if($sticker_url){
-                        $output .= '<span class="product-sticker"><img src=' . $sticker_url . '></span>';
+                        if($product->is_on_sale()){
+                            $output .= '<span class="product-sticker">';
+                        }else{
+                            $output .= '<span class="product-sticker no-sales">';
+                        }
+                        $output .= '<img src=' . $sticker_url . '></span>';
                     }
                     
                     $output .= '<a href="' . get_permalink() . '">';
